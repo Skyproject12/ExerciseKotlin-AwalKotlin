@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">AwalKotlin</string>
+
+    <string-array name="club_name">
+        <item>Falcon</item>
+        <item>Star War</item>
+        <item>stromtrooper</item>
+        <item>Darth vader</item>
+    </string-array>
+    <array name="clum_image">
+        <item>@drawable/falcon</item>
+        <item>@drawable/starwars</item>
+        <item>@drawable/storm_trooper</item>
+        <item>@drawable/darth_vader</item>
+    </array>
 </resources>
