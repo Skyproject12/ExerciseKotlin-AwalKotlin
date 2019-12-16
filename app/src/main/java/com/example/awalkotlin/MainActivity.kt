@@ -3,6 +3,7 @@ package com.example.awalkotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -18,7 +19,10 @@ class MainActivity : AppCompatActivity() {
         initData()
         // set layout manager
         list.layoutManager = LinearLayoutManager(this)
-        list.adapter = RecyclerViewAdapter(this, item)
+        list.adapter = RecyclerViewAdapter(this, item) {
+            val toast = Toast.makeText(applicationContext, it.name, Toast.LENGTH_LONG)
+            toast.show()
+        }
         // settext in kotlin
 
     }
